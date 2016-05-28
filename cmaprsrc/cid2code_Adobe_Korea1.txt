@@ -1,10 +1,10 @@
-# cid2code.txt (Version 08/11/2009)
+# cid2code.txt (Version 01/31/2012)
 #
 # The data in this table contains 11 tab-delimited columns of
 # information. The contents of this file supplement Technical Note
-# #5093 "Adobe-Korea1-2 Character Collection for CID-Keyed Fonts":
+# #5093 "The Adobe-Korea1-2 Character Collection":
 #
-# http://www.adobe.com/devnet/font/
+# http://www.adobe.com/devnet/font.html
 #
 # This table contains lists CIDs 0 through 18351 in the first column,
 # and provides additional columns that indicate whether a CID is used
@@ -62,13 +62,13 @@
 #   use of the UTF-8, UTF-16, and UTF-32 CMap files is recommended.)
 #
 # o Column 9: Character codes for the "UniKS-UTF8-H" and "UniKS-UTF8-V"
-#   CMaps (Unicode 4.1 UTF-8 encoding, proportional Latin characters).
+#   CMaps (Unicode 6.1 UTF-8 encoding, proportional Latin characters).
 #
 # o Column 10: Character codes for the "UniKS-UTF16-H" and "UniKS-UTF16-V"
-#   CMaps (Unicode 4.1 UTF-16 encoding, proportional Latin characters).
+#   CMaps (Unicode 6.1 UTF-16 encoding, proportional Latin characters).
 #
 # o Column 11: Character codes for the "UniKS-UTF32-H" and "UniKS-UTF32-V"
-#   CMaps (Unicode 4.1 UTF-32 encoding, proportional Latin characters).
+#   CMaps (Unicode 6.1 UTF-32 encoding, proportional Latin characters).
 #
 # It turns out that there are 268 redundantly encoded hanja (Chinese
 # characters) in KS X 1001:1992. The Adobe-Korea1-1 character
@@ -175,7 +175,7 @@
 #
 CID	KSC	KSC-EUC	KSCpc-EUC	KSCms-UHC	KSCms-UHC-HW	KSC-Johab	UniKS-UCS2	UniKS-UTF8	UniKS-UTF16	UniKS-UTF32
 0	*	*	*	*	*	*	*	*	*	*
-1	*	*	20	20	*	20	0020	20	0020	00000020
+1	*	*	20	20	*	20	0020	c2a0,20	00a0,0020	000000a0,00000020
 2	*	*	21	21	*	21	0021	21	0021	00000021
 3	*	*	22	22	*	22	0022	22	0022	00000022
 4	*	*	23	23	*	23	0023	23	0023	00000023
@@ -4593,7 +4593,7 @@ CID	KSC	KSC-EUC	KSCpc-EUC	KSCms-UHC	KSCms-UHC-HW	KSC-Johab	UniKS-UCS2	UniKS-UTF8
 4416	554a	d5ca	d5ca	d5ca	d5ca	e5ca	7405	e79085	7405	00007405
 4417	554b	d5cb	d5cb	d5cb	d5cb	e5cb	746f	e791af	746f	0000746f
 4418	554c	d5cc	d5cc	d5cc	d5cc	e5cc	8782	e89e82	8782	00008782
-4419	522b,554d	d2ab,d5cd	d2ab,d5cd	d2ab,d5cd	d2ab,d5cd	e43b,e5cd	90de,f92c	e9839e,efa4ac	90de,f92c	000090de,0000f92c
+4419	522b,554d	d2ab,d5cd	d2ab,d5cd	d2ab,d5cd	d2ab,d5cd	e43b,e5cd	90de,f92c	e9839e,efa8ae,efa4ac	90de,fa2e,f92c	000090de,0000fa2e,0000f92c
 4420	522d,554e	d2ad,d5ce	d2ad,d5ce	d2ad,d5ce	d2ad,d5ce	e43d,e5ce	4f86,f92d	e4be86,efa4ad	4f86,f92d	00004f86,0000f92d
 4421	554f	d5cf	d5cf	d5cf	d5cf	e5cf	5d0d	e5b48d	5d0d	00005d0d
 4422	5550	d5d0	d5d0	d5d0	d5d0	e5d0	5fa0	e5bea0	5fa0	00005fa0
@@ -4684,7 +4684,7 @@ CID	KSC	KSC-EUC	KSCpc-EUC	KSCms-UHC	KSCms-UHC-HW	KSC-Johab	UniKS-UCS2	UniKS-UTF8
 4507	5648	d6c8	d6c8	d6c8	d6c8	e658	6fa7	e6bea7	6fa7	00006fa7
 4508	5649,675f	d6c9,e7df	d6c9,e7df	d6c9,e7df	d6c9,e7df	e659,eedf	79ae,f9b6	e7a6ae,efa6b6	79ae,f9b6	000079ae,0000f9b6
 4509	564a,6764	d6ca,e7e4	d6ca,e7e4	d6ca,e7e4	d6ca,e7e4	e65a,eee4	91b4,f9b7	e986b4,efa6b7	91b4,f9b7	000091b4,0000f9b7
-4510	564b,6766	d6cb,e7e6	d6cb,e7e6	d6cb,e7e6	d6cb,e7e6	e65b,eee6	96b7,f9b8	e99ab7,efa6b8	96b7,f9b8	000096b7,0000f9b8
+4510	564b,6766	d6cb,e7e6	d6cb,e7e6	d6cb,e7e6	d6cb,e7e6	e65b,eee6	96b7,f9b8	e99ab7,efa8af,efa6b8	96b7,fa2f,f9b8	000096b7,0000fa2f,0000f9b8
 4511	523e,564c	d2be,d6cc	d2be,d6cc	d2be,d6cc	d2be,d6cc	e44e,e65c	52de,f92f	e58b9e,efa4af	52de,f92f	000052de,0000f92f
 4512	564e	d6ce	d6ce	d6ce	d6ce	e65e	6488	e69288	6488	00006488
 4513	5242,564f	d2c2,d6cf	d2c2,d6cf	d2c2,d6cf	d2c2,d6cf	e452,e65f	64c4,f930	e69384,efa4b0	64c4,f930	000064c4,0000f930
